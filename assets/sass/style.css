@@ -1,0 +1,535 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: Montserrat, sans-serif;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body button:hover {
+  cursor: pointer;
+}
+
+header nav {
+  margin: 10px;
+}
+header nav div.container a.navbar-brand img {
+  height: 100%;
+}
+header nav div.container div.collapse div.navbar-nav a.nav-link span {
+  color: #C7763E;
+  font-weight: 700;
+}
+
+section.hero {
+  background-image: url(../img/backgroundHero.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+section.hero div.container {
+  background-image: url(../img/carHero.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+}
+section.hero div.container div.line {
+  height: 230px;
+  border-left: 10px solid #F8D7A4;
+  margin-top: 80px;
+  width: 50%;
+}
+section.hero div.container div.line h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+  padding-left: 1em;
+  line-height: 1.2em;
+}
+
+@media (max-width: 720px) {
+  section.hero {
+    margin-top: 50px;
+    background-image: none;
+  }
+  section.hero div.container {
+    background-size: cover;
+    background-position: left;
+    height: 80%;
+  }
+  section.hero div.container div.line {
+    height: 150px;
+    width: 70%;
+    margin-top: 0px;
+  }
+  section.hero div.container div.line h1 {
+    font-size: 2em;
+  }
+}
+section.about {
+  margin-bottom: 100px;
+}
+section.about div.container div.row div.col-lg-6 {
+  padding-top: 50px;
+}
+section.about div.container div.row div.col-lg-6 div.imgWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.about div.container div.row div.col-lg-6 div.imgWrapper img {
+  width: 90%;
+}
+section.about div.container div.row div.col-lg-6 div.textWrapper {
+  height: 100%;
+  padding-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+section.about div.container div.row div.col-lg-6 div.textWrapper h2 {
+  color: #C7763E;
+  font-size: 2em;
+  font-weight: 700;
+  padding-bottom: 1em;
+}
+section.about div.container div.row div.col-lg-6 div.textWrapper p {
+  line-height: 1.3em;
+}
+
+section.services {
+  background-image: url(../img/backgroundServices.png);
+  background-position: center;
+  background-size: cover;
+}
+section.services div.container div.row div.headerTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+section.services div.container div.row div.headerTop h1 {
+  font-size: 2.5em;
+  color: #C7763E;
+  font-weight: 700;
+}
+section.services div.container div.row div.custom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  margin: 20px 0px;
+}
+section.services div.container div.row div.custom div.contentWrapper {
+  width: 75%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+section.services div.container div.row div.custom div.contentWrapper img {
+  width: 80px;
+}
+section.services div.container div.row div.custom div.contentWrapper h4 {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: white;
+}
+section.services div.container div.row div.custom div.contentWrapper p {
+  color: white;
+}
+
+section.fleet {
+  background-color: rgba(128, 128, 128, 0.086);
+}
+section.fleet div.container div.header {
+  text-align: center;
+  padding: 3em 0em;
+}
+section.fleet div.container div.header h1 {
+  color: #C7763E;
+  font-weight: 700;
+  font-size: 3em;
+}
+section.fleet div.container div.owl-carousel {
+  padding-bottom: 50px;
+}
+section.fleet div.container div.owl-carousel div.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.fleet div.container div.owl-carousel div.item div.card {
+  border: none;
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+section.fleet div.container div.owl-carousel div.item div.card div.imageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 20px 0px;
+}
+section.fleet div.container div.owl-carousel div.item div.card div.imageWrapper img {
+  width: 100%;
+}
+section.fleet div.container div.owl-carousel div.item div.card div.header {
+  text-align: center;
+  padding: 30px 0px;
+}
+section.fleet div.container div.owl-carousel div.item div.card div.header h3 {
+  color: #C7763E;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+section.fleet div.container div.owl-carousel div.item div.card div.header p {
+  padding: 10px 0px;
+}
+section.fleet div.container div.owl-carousel div.item div.card div.content {
+  text-align: center;
+  padding-bottom: 40px;
+}
+section.fleet div.container div.owl-carousel div.item div.card div.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.fleet div.container div.owl-carousel div.item div.card div.icons div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+section.fleet div.container div.owl-carousel div.item div.card div.icons div i {
+  font-size: 1.3em;
+  color: #F8D7A4;
+}
+section.fleet div.container div.owl-carousel div.item div.card div.icons div p {
+  padding: 0 1em;
+}
+
+section.trips {
+  background-color: #232730;
+}
+section.trips div.container {
+  height: 100%;
+}
+section.trips div.container div.row {
+  height: 100%;
+}
+section.trips div.container div.row div.col-lg-4 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+section.trips div.container div.row div.col-lg-4 h1 {
+  font-size: 3em;
+  color: white;
+  font-weight: 700;
+}
+section.trips div.container div.row div.col-lg-4 h2 {
+  font-size: 1.5em;
+  color: white;
+}
+
+section.testimonials {
+  background-color: #F8D7A4;
+}
+section.testimonials div.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section.testimonials div.container h1 {
+  font-size: 3em;
+  color: #C7763E;
+  font-weight: 700;
+  padding: 100px 0px;
+}
+section.testimonials div.container div.owl-carouselTwo {
+  margin: 0px 100px 100px 100px;
+}
+section.testimonials div.container div.owl-carouselTwo div.item div.article {
+  background-color: white;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+section.testimonials div.container div.owl-carouselTwo div.item div.article div.row div.col-lg-3 div.image-card {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+section.testimonials div.container div.owl-carouselTwo div.item div.article div.row div.col-lg-3 div.image-card div.image-wrapper {
+  padding: 30px 0px;
+}
+section.testimonials div.container div.owl-carouselTwo div.item div.article div.row div.col-lg-3 div.image-card h4 {
+  font-size: 1.5em;
+  color: black;
+}
+section.testimonials div.container div.owl-carouselTwo div.item div.article div.row div.col-lg-3 div.image-card p {
+  color: grey;
+}
+section.testimonials div.container div.owl-carouselTwo div.item div.article div.row div.col-lg-9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+section.testimonials div.container div.owl-carouselTwo div.item div.article div.row div.col-lg-9 div.textContainer p {
+  font-style: italic;
+  line-height: 1.5em;
+}
+section.testimonials div.container div.owl-carouselTwo div.item div.article div.row div.col-lg-9 div.star {
+  padding: 0.5em;
+  margin: 20px 0px;
+}
+section.testimonials div.container div.owl-carouselTwo div.item div.article div.row div.col-lg-9 div.star i {
+  color: #F8D7A4;
+  font-size: 1.5em;
+}
+
+section.call div.container-fluid {
+  padding: 70px 0px;
+  height: 100%;
+  background-image: url(../img/backgroundServices.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.call div.container-fluid h3 {
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding: 0px 40px;
+}
+section.call div.container-fluid h1 {
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+  font-weight: 700;
+  padding: 0px 40px;
+}
+
+section.contact div.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+section.contact div.container div.header {
+  margin: 50px 0px;
+}
+section.contact div.container div.header h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #C7763E;
+  font-weight: 700;
+}
+section.contact div.container div.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.193);
+  height: 100%;
+  width: 100%;
+  margin-bottom: 80px;
+}
+section.contact div.container div.formContainer form {
+  width: 80%;
+  margin: 100px 50px;
+}
+section.contact div.container div.formContainer form div ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(128, 128, 128, 0.467);
+  opacity: 1; /* Firefox */
+}
+section.contact div.container div.formContainer form div :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(128, 128, 128, 0.467);
+  opacity: 1; /* Firefox */
+}
+section.contact div.container div.formContainer form div ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(128, 128, 128, 0.467);
+  opacity: 1; /* Firefox */
+}
+section.contact div.container div.formContainer form div input {
+  border-radius: 0;
+}
+section.contact div.container div.formContainer form div textarea {
+  border-radius: 0;
+}
+section.contact div.container div.formContainer form button {
+  background-color: #A55C30;
+  border-radius: 0;
+  padding: 0.8em 5em;
+  border: none;
+}
+
+footer {
+  padding-top: 70px;
+  background-color: black;
+}
+@media (max-width: 992px) {
+  footer div.container div.row div.luxChaffeur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+footer div.container div.row div.luxChaffeur div.imageWrapper {
+  width: 100%;
+  padding: 20px 50px;
+}
+footer div.container div.row div.luxChaffeur div.imageWrapper img {
+  width: 200px;
+}
+footer div.container div.row div.luxChaffeur p {
+  color: white;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  padding: 0px 50px;
+}
+footer div.container div.row div.newsLetter {
+  text-align: center;
+}
+footer div.container div.row div.newsLetter h1 {
+  padding: 20px 0px;
+  color: #A55C30;
+  font-size: 2em;
+}
+footer div.container div.row div.newsLetter p {
+  color: white;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  padding: 20px 50px;
+}
+footer div.container div.row div.newsLetter div.row div.col-12 input {
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+footer div.container div.row div.newsLetter div.row div.col-12 button {
+  border-radius: 0;
+  background-color: #C7763E;
+  color: white;
+}
+footer div.container div.row div.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer div.container div.row div.contactInfo h1 {
+  padding: 20px 0px;
+  color: #A55C30;
+  font-size: 2em;
+}
+footer div.container div.row div.contactInfo div.wrapper div.place, footer div.container div.row div.contactInfo div.wrapper .phone, footer div.container div.row div.contactInfo div.wrapper .email {
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+}
+footer div.container div.row div.contactInfo div.wrapper div.place i, footer div.container div.row div.contactInfo div.wrapper .phone i, footer div.container div.row div.contactInfo div.wrapper .email i {
+  color: white;
+  font-size: 1.5em;
+  padding: 0.5em;
+  height: 100%;
+}
+footer div.container div.row div.contactInfo div.wrapper div.place p, footer div.container div.row div.contactInfo div.wrapper .phone p, footer div.container div.row div.contactInfo div.wrapper .email p {
+  display: inline-block;
+  color: white;
+  font-size: 1em;
+}
+footer div.container div.row div.socialPages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+footer div.container div.row div.socialPages i {
+  font-size: 2em;
+  color: white;
+  padding: 0px 20px;
+}
+footer div.container div.row div.lastSentence {
+  border-top: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer div.container div.row div.lastSentence p {
+  color: white;
+  padding: 20px;
+  font-size: 0.7em;
+}/*# sourceMappingURL=style.css.map */

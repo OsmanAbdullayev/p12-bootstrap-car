@@ -1,0 +1,22 @@
+header {
+    nav {
+        margin: 10px;
+        div.container {
+            a.navbar-brand {
+                img {
+                    height: 100%;
+                }
+            }
+              div.collapse {
+                div.navbar-nav {
+                    a.nav-link {
+                        span {
+                            color: $middleBrown;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

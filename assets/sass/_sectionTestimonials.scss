@@ -1,0 +1,67 @@
+section.testimonials {
+	background-color: $lightBrown;
+	div.container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		h1 {
+			font-size: 3em;
+			color: $middleBrown;
+			font-weight: 700;
+			padding: 100px 0px;
+		}
+		div.owl-carouselTwo {
+			margin: 0px 100px 100px 100px;
+			// padding: 50px 100px;
+			div.item {
+				div.article {
+					background-color: white;
+					padding: 50px;
+					margin-bottom: 50px;
+					div.row {
+						div.col-lg-3 {
+							div.image-card {
+								margin: 20px 0px;
+								display: flex;
+								align-items: center;
+								flex-direction: column;
+								justify-content: center;
+								div.image-wrapper {
+									padding: 30px 0px;
+								}
+								h4 {
+									font-size: 1.5em;
+									color: black;
+								}
+								p {
+									color: grey;
+								}
+							}
+						}
+						div.col-lg-9 {
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: space-around;
+							div.textContainer {
+								p {
+									font-style: italic;
+									// padding: 0px 50px;
+									line-height: 1.5em;
+								}
+							}
+							div.star {
+                                padding: 0.5em;
+								margin: 20px 0px;
+								i {
+									color: $lightBrown;
+									font-size: 1.5em;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

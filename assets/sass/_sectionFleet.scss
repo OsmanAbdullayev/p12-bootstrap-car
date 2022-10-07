@@ -1,0 +1,73 @@
+section.fleet {
+	background-color: rgba(128, 128, 128, 0.086);
+	div.container {
+		div.header {
+			text-align: center;
+			padding: 3em 0em;
+			h1 {
+				color: $middleBrown;
+				font-weight: 700;
+				font-size: 3em;
+			}
+		}
+		div.owl-carousel {
+			padding-bottom: 50px;
+			div.item {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				div.card {
+					border: none;
+					padding: 40px;
+					box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+					width: 400px;
+					margin-bottom: 20px;
+
+					div.imageWrapper {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						height: 200px;
+						padding: 20px 0px;
+						img {
+							width: 100%;
+						}
+					}
+					div.header {
+						text-align: center;
+						padding: 30px 0px;
+						h3 {
+							color: $middleBrown;
+							font-size: 1.5em;
+							font-weight: 500;
+						}
+						p {
+							padding: 10px 0px;
+						}
+					}
+					div.content {
+						text-align: center;
+						padding-bottom: 40px;
+					}
+					div.icons {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						div {
+							display: flex;
+							align-items: center;
+							justify-content: start;
+							i {
+								font-size: 1.3em;
+								color: $lightBrown;
+							}
+							p {
+								padding: 0 1em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

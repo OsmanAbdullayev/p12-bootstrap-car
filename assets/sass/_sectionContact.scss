@@ -1,0 +1,50 @@
+section.contact {
+	div.container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		div.header {
+			margin: 50px 0px;
+			h1 {
+				text-align: center;
+				font-size: 3em;
+				color: $middleBrown;
+				font-weight: 700;
+			}
+		}
+		div.formContainer {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-color: rgba(128, 128, 128, 0.193);
+			height: 100%;
+			width: 100%;
+            margin-bottom: 80px;
+			form {
+				width: 80%;
+				margin: 100px 50px;
+				div {
+					::placeholder {
+						/* Chrome, Firefox, Opera, Safari 10.1+ */
+						color: rgba(128, 128, 128, 0.467);
+						opacity: 1; /* Firefox */
+					}
+					input {
+						border-radius: 0;
+					}
+					textarea {
+						border-radius: 0;
+					}
+				}
+                button {
+                    background-color: $darkBrown;
+                    border-radius: 0;
+                    padding: 0.8em 5em;
+                    border: none;
+                }
+			}
+		}
+	}
+}

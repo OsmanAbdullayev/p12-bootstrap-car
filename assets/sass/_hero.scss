@@ -1,0 +1,47 @@
+section.hero {
+	background-image: url(../img/backgroundHero.png);
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	height: 100vh;
+	div.container {
+		background-image: url(../img/carHero.png);
+		background-position: right;
+		background-repeat: no-repeat;
+		height: 100%;
+		display: flex;
+		div.line {
+			height: 230px;
+			border-left: 10px solid $lightBrown;
+			margin-top: 80px;
+			width: 50%;
+			h1 {
+				font-size: 3.5em;
+				font-weight: 700;
+				padding-left: 1em;
+				line-height: 1.2em;
+			}
+		}
+	}
+}
+
+@media (max-width: 720px) {
+	section.hero {
+		margin-top: 50px;
+		background-image: none;
+		div.container {
+			background-size: cover;
+			background-position: left;
+			height: 80%;
+			div.line {
+				height: 150px;
+				width: 70%;
+				margin-top: 0px;
+				h1 {
+					font-size: 2em;
+				}
+			}
+		}
+	}
+}
